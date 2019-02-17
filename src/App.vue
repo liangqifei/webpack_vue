@@ -1,5 +1,6 @@
 <template>
   <div id="app" v-cloak>
+    <img src="../static/logo.png">
     <router-view/>
   </div>
 </template>
@@ -12,24 +13,18 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body,
 #app {
   width: 100%;
-  min-width: 1280px;
   height: 100%;
-  background: #fafafa;
 }
-.welcome {
-  width: 100%;
-  font-size: 3.5rem;
+#app {
   text-align: center;
-  color: #4886ff;
-  padding-top: 10rem;
-}
-#login {
-  width: 100%;
-}
-#login .loading {
-  top: 15rem !important;
 }
 </style>
