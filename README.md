@@ -3,7 +3,7 @@
 <p align="center">webpack配置vue2.0</p>
 <p align="center">
   <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">
-  <img width="100" src="https://vuejs.org/images/logo.png" alt="Vue logo">
+  <img width="100" src="https://github.com/liangqifei/webpack_vue/blob/master/static/vue.png" alt="Vue logo">
   </a>
 </p>
 ## 安装学习的网址
