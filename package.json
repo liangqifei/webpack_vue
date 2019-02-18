@@ -5,7 +5,9 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack --config webpack.dev.js",
+    "dev": "webpack-dev-server --inline --config webpack.dev.js"
   },
   "repository": {
     "type": "git",
@@ -33,17 +35,18 @@
     "url-loader": "^1.1.2",
     "vue-loader": "^15.6.2",
     "vue-template-compiler": "^2.6.6",
-    "webpack": "^4.29.4",
+    "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14",
     "xml-loader": "^1.2.1"
   },
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
+    "copy-webpack-plugin": "^4.6.0",
     "lodash": "^4.17.11",
     "vue": "^2.6.6",
     "vue-html-loader": "^1.2.4",
     "vue-router": "^3.0.2",
-    "vue-style-loader": "^4.1.2",
-    "webpack-dev-server": "^3.1.14"
+    "vue-style-loader": "^4.1.2"
   }
 }
