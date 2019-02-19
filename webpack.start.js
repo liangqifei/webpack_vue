@@ -11,7 +11,7 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     filename: "[name].[hash:7].js",
-    path: path.resolve(__dirname, "/"),
+    path: path.resolve(__dirname, "devdist"),
     publicPath: "/"
   },
   mode: "development",

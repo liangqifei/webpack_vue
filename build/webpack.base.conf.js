@@ -3,18 +3,19 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+import config from "../config";
 function resolve(dir) {
   return path.join(__dirname, "..", dir);
 }
 
 module.exports = {
-  entry: "./src/index.js",
+  context: path.resolve(__dirname, "../"), //基础目录，绝对路径，用于从配置中解析入口起点(entry point)和 loader
+  entry: "./src/index.js", //起点或是应用程序的起点入口
   output: {
     filename: "[name].[hash:7].js",
-    path: path.resolve(__dirname, "/"),
-    publicPath: "/"
+    path: config.outputPath,
+    publicPath: config.outputPath_publicPath
   },
-  mode: "development",
   module: {
     rules: [
       {
@@ -87,11 +88,11 @@ module.exports = {
   },
   plugins: [
     // 请确保引入这个插件！
-    new CleanWebpackPlugin(["devdist"]),
+    new CleanWebpackPlugin(["dist"]),
     new VueLoaderPlugin(),
 
     new HtmlWebpackPlugin({
-      title: "development",
+      title: "Output Management",
       filename: "index.html",
       template: "index.html",
       inject: true

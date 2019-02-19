@@ -35,7 +35,7 @@
 
 ### 打包
 
-     *** 打包命令 `npm run build` ***
+     打包命令 `npm run build`
 
 ## 前台目录结构
 
@@ -44,8 +44,10 @@
 ├─src
 │  ├─components 组件
 │  │  └─common
+│  ├─assets 资源
+│  │  └─images
 │  ├─router vue路由
-│  └─view 视图
+│  └─views 视图
 └─static 静态资源
     ├─css
     └─img
