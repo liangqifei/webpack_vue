@@ -59,7 +59,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js",//配置正式环境打包命令
-    "start": "webpack --config webpack.dev.js",//配置测试环境打包命令
+    "start": "webpack --config webpack.start.js",//配置测试环境打包命令
     "dev": "webpack-dev-server --inline --config webpack.dev.js"//配置开发环境命令
   }
 
